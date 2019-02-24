@@ -1,0 +1,334 @@
+/*
+*   GENERAL
+*
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    color: #777;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #333;
+    text-align: center;
+    padding-top: 5.5em;
+    padding-bottom: 0.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #007bff;
+    width: 3em;
+    margin: 0 auto;
+}
+
+span {
+    color: #007bff;
+    padding: 0 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: 29px;
+    font-size: .7em;
+    border: 1px solid #007bff;;
+    color: #777;
+    text-transform: uppercase;
+    transition: all .2s ease .2s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+    /* font-size: .8em; */
+    opacity: 0.95;
+    transform: scale(1.2, 1.2);
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+
+
+
+/*
+*
+* GENERAL ENDS HERE
+*/
+
+
+/*
+*   HEADER
+*
+*/
+
+header {
+    width: 100%;
+    height: 450px;
+    text-transform: uppercase;
+    background-image: url('../img/header.jpg');
+    background-position: center;
+    padding-top: 9em;
+    background-size: cover;
+}
+
+.container {
+    width: 50%;
+    margin: 2em auto 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.6em;
+    font-weight: 400;
+    color: #007bff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+p {
+    text-align: center;
+}
+
+.header-content {
+    font-size: .9em;
+    font-weight: 300;
+}
+
+
+
+/*
+*   /HEADER
+*
+*/
+
+
+
+
+/*
+*   NAV
+*
+*/
+
+nav {
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    list-style-type: none;
+    font-size: .9em;
+    padding: 1.5em 2.6em;
+    color: white;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 400;
+    text-align: center;
+    transition: all .25s ease .1s;
+}
+
+nav ul li:hover a{
+    color: #007bff;
+    background-color: white;
+}
+
+/*
+*   ////NAV
+*
+*/
+
+
+/*
+*   ABOUT ME
+*
+*/
+
+.about-me {
+    padding-top: 3.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 7em;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    height: 22em;
+    width: auto;
+}
+
+.about-me p {
+    width: 42vw;
+    padding-top: 2em;
+}
+
+/*
+*
+* //////ABOUT ME
+*
+*/
+
+
+
+/* 
+*
+* PORTFOLIO
+*
+*/
+
+#portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-content { 
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: 160px;
+}
+
+
+.portfolio-item .link
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	background-color: #007bff;
+	left: 0px;
+    top: 0px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 38px;
+    opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-item:hover .link
+{
+    opacity: 1;
+    font-size: 40px;
+}
+
+/* 
+*
+* /////// PORTFOLIO
+*
+*/
+
+
+
+/* 
+*
+* CONTACT
+*
+*/
+
+#contact .container h2 {
+    padding-top: 3em;
+}
+
+form {
+    padding-top: 3em;
+    padding-bottom: 4.3em;
+    width: 100%;
+    margin: 0;
+}
+
+input {
+    width: 14em;
+    font-size: 1em;
+}
+
+textarea {
+    width: 28.25em;
+    margin: 0;
+    margin-top: 8px;
+    height: 70px;
+    font-size: 1em;
+    display: block;
+    margin-left: 115.5px;
+}
+
+.media-icons {
+    padding-bottom: 4.3em;
+}
+
+i.fab {
+    padding: 0 10px;
+    font-size: 2.1em;
+    color: #007bff;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+i.fab:hover {
+    color: firebrick;
+}
+
+/*
+*
+*   /////CONTACT
+*
+*/
+
+
+
+
+/*
+*
+* FOOTER
+*
+*/
+
+footer {
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #f2f1ed;
+    height: 4.5em;
+}
+
+footer > p {
+    padding-top: 1.6em;
+}
